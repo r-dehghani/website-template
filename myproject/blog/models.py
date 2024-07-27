@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+from myproject.common.models import BaseModel
+
+
+class Post(BaseModel):
+    title = models.CharField(max_length=250)
+    
